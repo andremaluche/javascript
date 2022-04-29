@@ -26,6 +26,19 @@
     <script>
         function calcular() {
             let num = Number(window.prompt('Digite um número:'))
+            let res = document.querySelector('div#resultado')
+            res.innerHTML = `<p>O número a ser analisado será o <strong>${num}</strong>.</p><hr>`
+            res.innerHTML += `<p>O seu valor absoluto é ${Math.abs(num)}.</p>`
+            res.innerHTML += `<p>A sua parte inteira é ${Math.trunc(num)}.</p>`
+            res.innerHTML += `<p>O valor inteiro mais próximo é ${Math.round(num)}.</p>`
+            res.innerHTML += `<p>A sua raiz quadrada é ${Math.sqrt(num)}.</p>`
+            res.innerHTML += `<p>A sua raiz cubida é ${Math.cbrt(num)}.</p>`
+            res.innerHTML += `<p>O valor de ${num}<sup>2</sup> é ${Math.pow(num, 2)}.</p>`
+            res.innerHTML += `<p>O valor de ${num}<sup>3</sup> é ${Math.pow(num, 3)}.</p>`
+
+
+            /* Assim que resolvi o exercício somente vendo funcionando
+            let num = Number(window.prompt('Digite um número:'))
             let res = window.document.querySelector('div#resultado')
             let abs = Math.abs(num)
             let int = Math.trunc(num)
@@ -43,6 +56,7 @@
             res.innerHTML += `<p>A sua raiz cúbica é ${cubo}</p>`
             res.innerHTML += `<p>O valor de ${num}<sup>2</sup> é ${ele2}.</p>`
             res.innerHTML += `<p>O valor de ${num}<sup></sup> é ${ele3}.</p>`
+            */
         }
     </script>
 </body>
