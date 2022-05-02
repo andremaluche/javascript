@@ -24,18 +24,18 @@
         function comprar() {
             let prod = window.prompt('Qual produto você está comprando?')
 
-            let valor = Number(window.prompt(`Quanto custa ${prod} que está comprando?`))
+            let valor = Number(window.prompt(`Quanto custa o ${prod} que está comprando?`))
 
             let quant = Number(window.prompt(`Qual valor que você deu para pagar o ${prod}?`))
 
             let troco = quant - valor
 
             if(troco > 0) {
-                window.alert(`Você comprou ${prod} que custou ${valor.toLocaleString('pt-br',{style:'currency',currency:'BRL'})}\nDeu ${quant.toLocaleString('pt-br',{style:'currency',currency:'BRL'})} em dinheiro e vai receber ${troco.toLocaleString('pt-br',{style:'currency',currency:'BRL'})} de troco.\nVolte sempre!`)
+                window.alert(`Você comprou o ${prod} que custou ${valor.toLocaleString('pt-br',{style:'currency',currency:'BRL'})}\nDeu ${quant.toLocaleString('pt-br',{style:'currency',currency:'BRL'})} em dinheiro e vai receber ${troco.toLocaleString('pt-br',{style:'currency',currency:'BRL'})} de troco.\nVolte sempre!`)
             } else if (troco < 0) {
-                window.alert(`Você comprou ${prod} que custou ${valor.toLocaleString('pt-br',{style:'currency',currency:'BRL'})}\nDeu ${quant.toLocaleString('pt-br',{style:'currency',currency:'BRL'})} em dinheiro e vai faltar ${troco.toLocaleString('pt-br',{style:'currency',currency:'BRL'})} para quitar.\nVolte sempre!`)
+                window.alert(`Você comprou o ${prod} que custou ${valor.toLocaleString('pt-br',{style:'currency',currency:'BRL'})}\nDeu ${quant.toLocaleString('pt-br',{style:'currency',currency:'BRL'})} em dinheiro e vai faltar ${troco.toLocaleString('pt-br',{style:'currency',currency:'BRL'})} para quitar.\nVolte sempre!`)
             } else {
-                window.alert(`Você comprou ${prod} que custou ${valor.toLocaleString('pt-br',{style:'currency',currency:'BRL'})}\nDeu ${quant.toLocaleString('pt-br',{style:'currency',currency:'BRL'})} em dinheiro e não vai receber nada de troco.\nVolte sempre!`)
+                window.alert(`Você comprou o ${prod} que custou ${valor.toLocaleString('pt-br',{style:'currency',currency:'BRL'})}\nDeu ${quant.toLocaleString('pt-br',{style:'currency',currency:'BRL'})} em dinheiro e não vai receber nada de troco.\nVolte sempre!`)
             }
         }
     </script>
