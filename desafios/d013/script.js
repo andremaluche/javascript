@@ -11,13 +11,13 @@ function inicio() {
 
     res.innerHTML = `<h2>Analisando a situação de ${nome}</h2>`
 
-    res.innerHTML += `<p>Com as notas ${nota1} e ${nota2} a <strong>média é ${media}</strong>.</p>`
+    res.innerHTML += `<p>Com as notas ${nota1.toLocaleString({style:'decimal'})} e ${nota2.toLocaleString({style:'decimal'})} a <strong>média é ${media.toLocaleString({style:'decimal'})}</strong>.</p>`
 
     if (media < 3) {
         res.innerHTML += `<p>Com média abaixo de 3,0, o aluno está <span class="reprovado">REPROVADO</span>.</p>`
     } else if (media >=3 && media <=6) {
         res.innerHTML += `<p>Com média entre 3,0 e 6,0, o aluno está em <span class="recuperacao">RECUPERAÇÃO</span>.</p>`
     } else {
-        res.innerHTML += `<p>Com média acima de 6,0 o Aluno está <span class="aprovado">APROVADO</span>.</p>`
+        res.innerHTML += `<p>Com média acima de 6,0 o aluno está <span class="aprovado">APROVADO</span>.</p>`
     }
 }
