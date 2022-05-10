@@ -2,10 +2,8 @@ let res = window.document.querySelector('div#res')
 
 function calcular() {
     let nome = window.prompt('Qual é o nome do aluno?')
-
     let n1 = Number(window.prompt(`Qual foi a primeira nota de ${nome}?`))
-
-    let n2 = Number(window.prompt(`Além de ${nota1}, qual foi a outra nota de ${nome}?`))
+    let n2 = Number(window.prompt(`Além de ${n1}, qual foi a outra nota de ${nome}?`))
 
     med = (n1 + n2) /2
 
